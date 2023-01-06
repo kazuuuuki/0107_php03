@@ -48,7 +48,7 @@ if ($status === false) {
     <!-- フォームラッパー -->
     <div class="form_wrapper">
     <!-- フォーム開始 -->
-    <form action="insert.php" method="post" class="form">
+    <form action="update.php" method="post" class="form">
     <h1 class="main_title">#徒然映画記</h1>
     <a href="read.php" class="conf">記録を確認</a>
 
@@ -94,6 +94,7 @@ if ($status === false) {
         </div>
         <!-- 送信ボタン -->
         <div class="sent_all">
+            <input type="hidden" name="id" value="<?= $result['id'] ?>">
             <button value="更新" class="sent">更新</button><br>
 
         </div>
